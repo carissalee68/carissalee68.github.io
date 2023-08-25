@@ -26,6 +26,11 @@
             font-size: 24px;
         }
 
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
         nav {
             display: flex;
             gap: 20px;
@@ -95,7 +100,7 @@
         .product img {
             border-radius: 10px;
             width: 100%;
-            height: 160px;
+            height: 100px;
         }
 
         .product.image {
@@ -119,7 +124,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 10px 20px 15px 20px;
             border-radius: 0 0 10px 10px;
         }
 
@@ -130,6 +135,17 @@
             padding: 5px 10px;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        .text {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-size: smaller;
+        }
+
+        .name {
+            margin-bottom: 4px;
+            font-size: medium;
         }
 
         .footer {
@@ -145,7 +161,10 @@
 
 <body>
     <header>
-        <div class="logo">🐾 Pawtastic</div>
+        <div class="logo">
+            <a href="index.html">🐾 Pawtastic</a>
+        </div>
+        
         <nav>
             <a href="#">About</a>
             <a href="#">Our Products</a>
@@ -159,9 +178,9 @@
         <div class="column">
             <div class="product image">
                 <div class="product-details">
-                    <h2>Featured (because cute)</h2>
-                    <p>Yukata time.</p>
-                    <p>$180</p>
+                    <h2 class="name">Featured (because cute)</h2>
+                    <p class="text">Yukata time.</p>
+                    <p class="text">$180</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
@@ -169,33 +188,33 @@
         <div class="column">
             <div class="row">
                 <div class="product sub">
-                    <img src="img/product2.jpg" alt="Product 2">
-                    <h2>IQ Raise</h2>
-                    <p>Computing God.</p>
-                    <p>$500</p>
+                    <img src="img/store/product2.jpg" alt="Product 2">
+                    <h2 class="name">IQ Raise</h2>
+                    <p class="text">Computing God.</p>
+                    <p class="text">$500</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product sub">
-                    <img src="img/product3.jpg" alt="Product 3">
-                    <h2>Quality Sleep</h2>
-                    <p>Silky nap.</p>
-                    <p>$50</p>
+                    <img src="img/store/product3.jpg" alt="Product 3">
+                    <h2 class="name">Quality Sleep</h2>
+                    <p class="text">Silky nap.</p>
+                    <p class="text">$50</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
             <div class="row">
                 <div class="product sub">
-                    <img src="img/product4.jpg" alt="Product 4">
-                    <h2>Even Better Quality Sleep</h2>
-                    <p>Chou chou best pillow.</p>
-                    <p>$100</p>
+                    <img src="img/store/product4.jpg" alt="Product 4">
+                    <h2 class="name">Even Better Quality Sleep</h2>
+                    <p class="text">Chou chou best pillow.</p>
+                    <p class="text">$100</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
                 <div class="product sub">
-                    <img src="img/product5.jpg" alt="Product 5">
-                    <h2>Guaranteed Wealth</h2>
-                    <p>Ang pao is a must.</p>
-                    <p>$888</p>
+                    <img src="img/store/product5.jpg" alt="Product 5">
+                    <h2 class="name">Guaranteed Wealth</h2>
+                    <p class="text">Ang pao is a must.</p>
+                    <p class="text">$888</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
