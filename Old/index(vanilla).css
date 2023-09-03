@@ -13,8 +13,9 @@ body {
     overflow: hidden;
 }
 
-.nav {
+#navigation-bar {
     background-color: rgb(196, 157, 116);
+    color: white;
 }
 
 #navigation-bar ul {
@@ -35,8 +36,8 @@ body {
 
 #top-content {
     background-color: rgb(196, 157, 116);
+    padding-bottom: 30px;
     height: 400px;
-    margin-bottom: 10px;
 }
 
 #top-content iframe {
@@ -54,10 +55,18 @@ body {
 }
 
 #side-img {
+    float: left;
     height: 350px;
     width: 350px;
+    /* background-color: rgb(196, 157, 116); */
     padding: 10px;
     box-sizing: border-box;
+}
+
+#side-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 @media(max-width: 600px) {
@@ -85,12 +94,8 @@ body {
     height: inherit;
 }
 
-.carousel-inner img {
-    width: 200px;
-    height: 200px;
+#bottom-content img {
+    width: 150px;
+    height: 150px;
     padding: 20px;
-}
-
-.carousel-item {
-    margin-right: 0;
 }
